@@ -13,6 +13,7 @@ public:
 
 int main()
 {
+	std::cout << "Mouse Log\n<c> Sharkbyteprojects\nhttps://github.com/sharkbyteprojects\n" << std::endl;
 	coordinates prevc;
 	POINT currentcursorpos;
 	int tick{ 0 };
