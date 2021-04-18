@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lockCursorAdvanced", "lockC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lock cursor", "lock cursor", "{07E88F66-3FFB-4EE8-8E08-A192F183618D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "windows", "windows", "{93835F18-776C-421C-93EB-2D87DCD65C75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "toggleWIndowVisibility", "toggleWIndowVisibility\toggleWIndowVisibility.vcxproj", "{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -53,13 +57,23 @@ Global
 		{7F816A71-21F1-4353-8FF4-B43173BFF597}.Release|x64.Build.0 = Release|x64
 		{7F816A71-21F1-4353-8FF4-B43173BFF597}.Release|x86.ActiveCfg = Release|Win32
 		{7F816A71-21F1-4353-8FF4-B43173BFF597}.Release|x86.Build.0 = Release|Win32
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Debug|x64.ActiveCfg = Debug|x64
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Debug|x64.Build.0 = Debug|x64
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Debug|x86.Build.0 = Debug|Win32
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Release|x64.ActiveCfg = Release|x64
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Release|x64.Build.0 = Release|x64
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Release|x86.ActiveCfg = Release|Win32
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{185C8E19-D09E-4077-9EFB-6F8474CE8A5B} = {93835F18-776C-421C-93EB-2D87DCD65C75}
 		{9A711D95-C305-43C0-AF84-0B506BB0F0C4} = {07E88F66-3FFB-4EE8-8E08-A192F183618D}
 		{7F816A71-21F1-4353-8FF4-B43173BFF597} = {07E88F66-3FFB-4EE8-8E08-A192F183618D}
+		{214D3C7E-C5FD-406A-AE52-534EB62FA6A6} = {93835F18-776C-421C-93EB-2D87DCD65C75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECB49343-72B5-450D-A2A8-0A49EB167EE8}

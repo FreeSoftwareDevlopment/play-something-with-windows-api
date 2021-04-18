@@ -25,7 +25,7 @@ int main()
 			if (enabled) {
 				SetCursorPos(currentcursorpos.x, currentcursorpos.y);
 			}
-			std::this_thread::sleep_for(std::chrono::milliseconds(1));
+			std::this_thread::sleep_for(std::chrono::microseconds(1));
 			stateofThing = (GetKeyState(VK_F2) & 0x8000);
 			if (stateofThing != prevstateofthing && stateofThing) {
 				visibilityChange();
