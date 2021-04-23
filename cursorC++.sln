@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "toggleWIndowVisibility", "t
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clearRecycleBin", "clearRecycleBin\clearRecycleBin.vcxproj", "{55B3304E-BF5C-4849-BAC0-80AAB81DEB79}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netclient", "netclient\netclient.vcxproj", "{03D27983-991F-4E0E-9BEC-E3819B9640FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -75,6 +77,14 @@ Global
 		{55B3304E-BF5C-4849-BAC0-80AAB81DEB79}.Release|x64.Build.0 = Release|x64
 		{55B3304E-BF5C-4849-BAC0-80AAB81DEB79}.Release|x86.ActiveCfg = Release|Win32
 		{55B3304E-BF5C-4849-BAC0-80AAB81DEB79}.Release|x86.Build.0 = Release|Win32
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Debug|x64.ActiveCfg = Debug|x64
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Debug|x64.Build.0 = Debug|x64
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Debug|x86.Build.0 = Debug|Win32
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Release|x64.ActiveCfg = Release|x64
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Release|x64.Build.0 = Release|x64
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Release|x86.ActiveCfg = Release|Win32
+		{03D27983-991F-4E0E-9BEC-E3819B9640FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
