@@ -10,9 +10,17 @@ int main(int argc, char* argv[])
 		std::cout << "OOOOOPS! This Application need as args the network Address to download!" << std::endl;
 		return -1;
 	}
+	bool extended{ argv[0] == new char[] {"netclientupd.exe"} };
 	for (int currentval{ 1 }; currentval < argc; currentval++) {
 		char* urls = argv[currentval];
-		std::cout << "Content of " << urls << ": " << getdata(urls) << "\n" << std::endl;
+		if (extended) {
+			std::cout << "Content of " << urls << ": ";
+		}
+		std::cout << getdata(urls);
+		if (extended) {
+			std::cout << "\n";
+		}
+		std::cout << std::endl;
 	}
 	return 0;
 }
