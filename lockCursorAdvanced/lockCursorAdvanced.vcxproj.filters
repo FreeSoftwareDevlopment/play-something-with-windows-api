@@ -23,6 +23,12 @@
     <ClInclude Include="resource.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="ccp.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="lockCursorAdvanced.rc">

@@ -1,7 +1,5 @@
-#include <Windows.h>
-#include <iostream>
-#include <thread>
-#include <chrono>
+#include "includes.h"
+#include "ccp.h"
 
 void visibilityChange() {
 	HWND ConsoleWindow{ GetConsoleWindow() };
@@ -10,8 +8,10 @@ void visibilityChange() {
 
 int main()
 {
-	POINT currentcursorpos;
-	if (GetCursorPos(&currentcursorpos) == TRUE) {
+	cursorPos* current;
+	retGP<BOOL, cursorPos*> x{ getCurrentCursorPos() };
+	if (x.a == TRUE) {
+		current = x.b;
 		std::cout << "Lock Cursor\n<c> Sharkbyteprojects\nhttps://github.com/sharkbyteprojects\n" << "Press Escape to unlock Mouse and close this!\nPress F1 to toggle Lock\nPress F2 to Change Console Visibility" << std::endl;
 		bool stateofThing{ false }, prevstateofthing{ false }, stateofThingB{ false }, prevstateofthingB{ false }, enabled{ true };
 		do {
@@ -19,11 +19,11 @@ int main()
 			if (stateofThingB != prevstateofthingB && stateofThingB) {
 				enabled = !enabled;
 				if (enabled) {
-					GetCursorPos(&currentcursorpos);
+					current = getCurrentCursorPos().b;
 				}
 			}
 			if (enabled) {
-				SetCursorPos(currentcursorpos.x, currentcursorpos.y);
+				SetCursorPos(current->x, current->y);
 			}
 			std::this_thread::sleep_for(std::chrono::microseconds(1));
 			stateofThing = (GetKeyState(VK_F2) & 0x8000);

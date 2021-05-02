@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <Wininet.h>
 
-char* getdata(char*);
+char* getdata(char*, int);
 
 int main(int argc, char* argv[])
 {
@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 		if (extended) {
 			std::cout << "Content of " << urls << ": ";
 		}
-		std::cout << getdata(urls);
+		std::cout << getdata(urls, 300);
 		if (extended) {
 			std::cout << "\n";
 		}
@@ -25,8 +25,7 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-char* getdata(char* urls, int* recieveddatalength) {
-	int torecieve{ 300 };
+char* getdata(char* urls, int* recieveddatalength, int torecieve = 300) {
 	char* recievedata{ new char[torecieve + 1] };
 	HANDLE inets = InternetOpenA("sharkbyte net client", INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, NULL);
 	if (inets == NULL) {
@@ -42,7 +41,7 @@ char* getdata(char* urls, int* recieveddatalength) {
 	return recievedata;
 }
 
-char* getdata(char* urls) {
+char* getdata(char* urls, int torec = 300) {
 	int zerovalue{ 0 };
-	return getdata(urls, &zerovalue);
+	return getdata(urls, &zerovalue, torec);
 }
